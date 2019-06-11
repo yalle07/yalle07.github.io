@@ -1,0 +1,76 @@
+ body {
+     background: #ADD8E6;
+ }
+ 
+ header {
+     background: #2c3e50;
+     color: #fff;
+ }
+ 
+ .main {
+     background: #f2f2f2;
+ }
+ 
+ aside {
+     /*background: #c0392b;*/
+     /* color: #fff;*/
+ }
+ 
+ footer {
+     background: #272727;
+     line-height: 20px;
+     color: rgb(8, 1, 1);
+ }
+ 
+ .red {
+     position: fixed;
+     top: 200px;
+     z-index: 100;
+     left: 0;
+ }
+ 
+ .red .item {
+     padding: 5px 20px;
+     width: 20px;
+     -transition: all 500ms ease;
+     -webkit-transition: all 500ms ease;
+     -o-transition: all 500ms ease;
+ }
+ 
+ .red .item:hover {
+     padding: 5px 30px;
+     background: #000;
+ }
+ 
+ .red .red-facebook {
+     background: #3b5998;
+ }
+ 
+ .red .red-twitter {
+     background: #55acee;
+ }
+ 
+ .red .red-instagram {
+     background: #3f729b;
+ }
+ 
+ .red .red-youtube {
+     background: #ff0000;
+ }
+ 
+ .red .red-pinterest {
+     background: #cb2027;
+ }
+ 
+ .red .red-email {
+     background: #007bb5;
+ }
+ /* ==========================================
+	Estilos responsive para la barra de redes sociales
+============================================*/
+ 
+ @media screen and (max-width: 575px) {
+     .red {
+         display: none;
+     }
+ }
