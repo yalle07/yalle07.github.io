@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="CSS/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/ico" href="ING/favicon.ico" />
+    <link rel="stylesheet" href="CSS/fa-svg-with-js.css">
+    <link rel="stylesheet" href="ifonts/style.css">
+
+
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #e3f2fd;">
+
+
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sitiosturisticos.html">Sitios turisticos</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+
+    <header>
+        <div class="container">
+            <center>
+                <h1>Contactos</h1>
+            </center>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div>
+
+
+            <h2> Puedes contactarte conmigo,ingresa tus datos y seras atendido</h2>
+            <h3>Contactate </h3>
+            <address>Autor:Jhonatan Romero Yalle <br>
+                Direccion:Urbanizacion El Molino A-64 <br>
+                cel:985372397 <br>
+                email:jromeroy13@unc.edu.pe
+            </address>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+
+
+
+        <form class="formulario">
+            <!-- action="index.html" method="post"-->
+
+            <fieldset>
+                <legend> Tus datos</legend>
+
+                <label for="Nombre"> Nombre</label>
+                <input type="text" name="nombre" placeholder="tu nombre" id="Nombre " autocomplete="on">
+                <br>
+                <br>
+                <label for="Apellido"> Apellido</label>
+                <input type="text" name="apellido" placeholder="tu apellido" id="Apellido " autocomplete="on">
+                <br><br>
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" id="sexo" name="sexo" value="hombre" checked> Hombre<br>
+                <input type="radio" id="sexo" name="sexo" value="mujer">Mujer<br>
+                <input type="radio" id="sexo" name="sexo" value="otro">Otro<br>
+                <br><br>
+                <label for="">Fecha de Cunpleaños</label>
+                <input type="date" name="fecha" value="">
+                <input type="datetime-local" name="fecha" value="">
+                <br><br>
+                <label>Correo electronico</label>
+                <input type="email" name="email" placeholder="correo@dominio.com">
+                <br><br>
+                <label>Contraseña</label>
+                <input type="password" name="contrasena" value="" />
+                <br><br>
+                <label for="">Tu sitio web</label>
+                <input type="url" name="sitio web" placeholder="http://www.dominio.com" value="">
+                <br><br>
+                <label for="">¿Cuanto conoces Cajamarca?</label>
+                <input type="range" name="puntaje" min="0" max="100" value="">
+
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Informacion sobre los atractivos turisticos que desea visitar</legend>
+                <label for="turno">Turno:</label>
+                <select id="turno" class="turno" name="turno">
+                                  <option value="matutino">Matutino</option>
+                                  <option value="vespertino">Vespertino</option>
+                                  
+                                </select>
+                <br><br>
+                <label for="">Que atractivos  turisticos  te gustaria que agregaranos</label>
+                <input list="propuesta" name="encuesta" value="">
+                <datalist id="propuesta">
+                                  <option value="Convento iglesia la Recoleta">
+                                  <option value="la colpa">
+                                  <option value="huanbocancha y porcon bajo">
+                                  <option value="catedral santa catalina">
+                        
+                                </datalist>
+                <br><br>
+                <label>Elige los atractivos turisticos que desas visitar</label><br>
+                <input type="checkbox" name="" value="Baños del inca">BAÑOS DEL INCA <br>
+                <input type="checkbox" name="" value="Cerro Santa Apolonia">SANTA APOLONIA<br>
+                <input type="checkbox" name="" value="La colpa">VENTANILLAS DE OTUZCO <br>
+                <input type="checkbox" name="" value="Cuarto de Rescate">CUARTO DE RESCATE <br>
+                <input type="checkbox" name="" value="Cumbe Mayo">CUMBE MAYO <br>
+                <input type="checkbox" name="" value="Granja Porcon">GRANJA PORCON<br>
+                <br>
+                <label for="">Fecha que deseas realizar la visita </label>
+                <input type="month" name="fecha"><br>
+                <input type="time" name="fecha"><br>
+                <input type="week" name="fecha"><br>
+
+
+
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Extra</legend>
+                <label>Las primeras 10 personas reciben un polo gratis,elige el color</label>
+                <input type="color" name="color" value=""><br><br>
+                <label for=""> elige la talla</label><br>
+                <input type="radio" id="talla" name="talla" value="s" checked> S<br>
+                <input type="radio" id="talla" name="talla" value="m">M<br>
+                <input type="radio" id="talla" name="talla" value="xl">L<br>
+            </fieldset>
+            <br>
+
+
+
+            <button class="btn btn-primary" type="submit">Borrar</button>
+
+            <button class="btn btn-primary" type="submit">Enviar</button>
+
+        </form>
+    </div>
+
+
+
+    <footer>
+        <!-- Card -->
+        <div class="card">
+
+            <!-- Card image -->
+            <div class="view overlay">
+
+                <img class="card-img-top" src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg" alt="Card image cap">
+                <a href="#!">
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+
+            <!-- Card content -->
+            <div class="card-body">
+
+                <!-- Title -->
+                <h4 class="card-title">INGENIERIA WEB</h4>
+                <!-- Text -->
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <!-- Button -->
+
+
+            </div>
+
+        </div>
+        <!-- Card -->
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="CSS/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/fontawesome-all.min.js"></script>
+</body>
+
+</html>
